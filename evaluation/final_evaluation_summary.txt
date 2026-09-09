@@ -1,0 +1,77 @@
+======================================================================
+APPLE SUPPORT AGENT - FINAL EVALUATION SUMMARY
+======================================================================
+
+1. AGENT EVALUATION
+----------------------------------------------------------------------
+Intent accuracy: 0.4450
+Macro intent precision: 0.4923
+Macro intent recall: 0.3997
+Macro intent F1: 0.4043
+Action accuracy: 0.7450
+Auto-handle precision: 0.2941
+Auto-handle recall: 0.1136
+Auto-handle F1: 0.1639
+Automation coverage: 0.0850
+False auto-handles: 12
+Average intent confidence: 0.5936
+Average retrieval similarity: 0.6150
+Escalations: 183
+Auto-handled: 17
+
+Model intent distribution:
+  hardware_device: 95
+  software_update: 51
+  battery_charging: 11
+  keyboard_input: 11
+  account_icloud: 9
+  connectivity_calls: 8
+  apps_services: 5
+  messaging: 4
+  purchases_billing: 4
+  repair_support: 2
+
+2. RETRIEVAL / EVIDENCE
+----------------------------------------------------------------------
+Strong evidence: 105
+Moderate evidence: 39
+Weak evidence: 48
+None evidence: 8
+Evidence exists rate: 0.7200
+Intent-grounded rate: 0.5900
+Average retrieval similarity: 0.6150
+
+3. REPLY EVALUATION - OFFLINE RUBRIC
+----------------------------------------------------------------------
+non_empty: 1.0000
+professional: 1.0000
+helpful_request: 1.0000
+intent_grounded: 0.6150
+escalation_appropriate: 1.0000
+historical_grounding: 0.3050
+no_unsupported_claims: 1.0000
+Average offline quality score: 0.8457
+
+NOTE: The reply-quality score above is a deterministic offline rubric, not an LLM-as-judge score.
+
+4. HUMAN / AUTOMATED EVIDENCE REVIEW
+----------------------------------------------------------------------
+A 56-example high-priority subset was prepared for evidence review.
+The current review file was created through an AI-assisted prefill workflow and has not been independently confirmed as human annotation.
+Therefore, no independent human-agreement metric is reported as a final evaluation result.
+
+Current AI-assisted prefill:
+Examples prepared for review: 56
+AI-assisted relevance = Yes: 13
+AI-assisted relevance = No: 43
+Independent human confirmation: Pending
+
+5. METHODOLOGICAL CAVEATS
+----------------------------------------------------------------------
+- The 200-example golden set was initially machine-assisted.
+- The 56-example evidence review contains AI-assisted draft labels and should not be represented as fully independent human annotation unless a human reviewer independently confirmed/corrected them.
+- OpenAI API-based LLM judging was unavailable because the API account had insufficient quota; therefore no fabricated LLM-judge result is reported.
+- Raw action accuracy is affected by the imbalance between escalation and auto-handle decisions.
+- The final risk-aware policy intentionally favors conservative escalation and therefore has low automation coverage.
+
+======================================================================

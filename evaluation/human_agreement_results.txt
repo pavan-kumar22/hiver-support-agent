@@ -1,0 +1,12 @@
+APPLE SUPPORT AGENT — HUMAN / AUTOMATED AGREEMENT
+============================================================
+Review examples: 56
+Automated vs human relevance agreement: 0.7679
+Cohen's kappa: 0.0000
+Human evidence relevance rate: 0.2321
+Human reply-support rate: 0.0000
+Disagreements: 13
+
+Agreement by evidence level:
+none: 1.0000
+weak: 0.7292

@@ -1,0 +1,75 @@
+brand: AppleSupport
+
+version: "1.0"
+
+intents:
+
+  - id: software_update
+    name: Software / iOS Update Issue
+    description: >
+      Problems caused by, occurring during, or related to iOS/macOS/watchOS
+      updates, including installation, downgrade, crashes, freezing, slowness,
+      and update-specific bugs.
+
+  - id: battery_charging
+    name: Battery / Charging
+    description: >
+      Battery drain, battery health, unexpected shutdowns, charging problems,
+      charging accessories, overheating related to charging, and battery life.
+
+  - id: messaging
+    name: Messaging / iMessage / SMS
+    description: >
+      Problems sending, receiving, syncing, or displaying iMessage, SMS,
+      Messages, or message notifications.
+
+  - id: keyboard_input
+    name: Keyboard / Autocorrect
+    description: >
+      Keyboard, autocorrect, typing, character rendering, predictive text,
+      and text-entry glitches.
+
+  - id: apps_services
+    name: Apps / Apple Services
+    description: >
+      Problems with Apple apps or services such as App Store, Apple Music,
+      Safari, Photos, Mail, Calendar, Notes, FaceTime, and similar services,
+      when the primary issue is application/service functionality.
+
+  - id: account_icloud
+    name: Apple ID / iCloud / Account
+    description: >
+      Apple ID, iCloud, account access, password, verification, authentication,
+      backups, account locking, syncing, and suspicious account messages.
+
+  - id: connectivity_calls
+    name: Connectivity / Calls / Network
+    description: >
+      Cellular service, calls, Wi-Fi, Bluetooth, SIM, network connectivity,
+      activation, and related communication/connectivity problems.
+
+  - id: hardware_device
+    name: Hardware / Device Problem
+    description: >
+      Physical device failures, screen, buttons, speakers, cameras, ports,
+      sensors, accessories, physical damage, overheating, or device malfunction
+      not primarily caused by software updates.
+
+  - id: purchases_billing
+    name: Purchases / Billing / Subscriptions
+    description: >
+      App or media purchases, payment methods, billing, unauthorized charges,
+      refunds, subscriptions, Apple Music purchases, and purchase restoration.
+
+  - id: repair_support
+    name: Repair / Apple Support / Service
+    description: >
+      Repair status, service-center problems, Apple Store service, replacement,
+      warranty/service complaints, unresolved support cases, and requests for
+      direct human assistance.
+
+  - id: other
+    name: Other / Unclear
+    description: >
+      Messages that do not fit the above intents, contain insufficient context,
+      are purely conversational, or represent a genuinely novel issue.
